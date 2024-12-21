@@ -1,0 +1,218 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Header Container */
+.website-header {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-bottom: 1px solid #ddd; /* Optional border */
+}
+footer {
+  width: 100vw;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+
+  width: 100%;
+}
+footer p {
+  margin-left: 20px;
+}
+footer a {
+  text-align: end;
+  color: #ddd;
+  margin-right: 20px;
+}
+.inner-box {
+  padding: 20px;
+  border: 2px solid black;
+  border-left: 20px solid black;
+  border-right: 20px solid black;
+}
+/* Flex Container for Header */
+.container {
+  display: flex;
+  justify-content: space-between; /* Align logo to the left and menu to the right */
+  align-items: center; /* Center content vertically */
+  width: 100%;
+  max-width: 1200px; /* Limit width of the header */
+  margin: 0 auto;
+  gap: 10px;
+  padding: 10px; /* Center container */
+}
+
+/* Logo */
+.logo img {
+  width: 120px; /* Adjust size of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+header .nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+}
+
+header .nav a:hover {
+  background-color: #ffcc00;
+  border-radius: 4px;
+}
+
+.dropdown {
+  position: relative;
+  margin-top: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 180px;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 10;
+}
+header .nav {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+.dropdown-content a {
+  display: block;
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-button:hover {
+  background-color: #1c9c57;
+}
+
+.enquiry-section {
+  background-color: #f7f8fa;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enquiry-container {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.enquiry-heading h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.enquiry-heading p {
+  margin: 10px 0 30px;
+  color: #666;
+  font-size: 1rem;
+}
+
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.enquiry-form label {
+  text-align: left;
+  font-weight: bold;
+  color: #555;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  background: #f9f9f9;
+}
+
+.enquiry-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+  border-color: #000000;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.enquiry-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.enquiry-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap !important;
+  }
+  header .nav {
+    gap: 0px;
+  }
+}
